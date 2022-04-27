@@ -41,7 +41,7 @@ export default function AreaRadial() {
             options={first.options}
             series={first.series}
             type="radialBar"
-            height={250}
+            width={300}
           />
         </div>
       </div>

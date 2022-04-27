@@ -27,7 +27,7 @@ export default function Hello() {
             options={first.options}
             series={first.series}
             type="bar"
-            width="500"
+            max-width="500"
           />
         </div>
       </div>

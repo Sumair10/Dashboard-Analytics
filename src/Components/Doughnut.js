@@ -15,8 +15,9 @@ export default function Doughnut() {
           <Chart
             options={first.options}
             series={first.series}
-            type="donut" 
-            width="500"
+            type="donut"
+            max-width="300"
+            max-height="300"
           />
         </div>
       </div>

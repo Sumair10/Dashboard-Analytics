@@ -382,7 +382,7 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
-                    minHeight: 320,
+                    height: 320,
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
                   }}
                 >
@@ -524,6 +524,7 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
+                    // minHeight : 300,
                     height: 500,
                     // border : '2px solid red',
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
@@ -675,7 +676,7 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
-                    height: 500,
+                    minHeight: 500,
                     // border : '2px solid red',
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
                   }}
@@ -713,11 +714,7 @@ function DashboardContent() {
                   </Grid>
                   <Grid>
                     <Doughnut />
-                    {/* <Charts /> */}
-                    {/* <Doughnut/> */}
-                    {/* <Doughnut1/> */}
-                    {/* <ApexCharts/> */}
-                    {/* <Curve/> */}
+                  
                   </Grid>
                 </Paper>
               </Grid>

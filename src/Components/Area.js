@@ -52,7 +52,7 @@ export default function Area() {
             options={first.options}
             series={first.series}
             type="area"
-            width="500"
+            max-width="500"
           />
         </div>
       </div>

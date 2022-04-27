@@ -27,7 +27,7 @@ export default function Line() {
             options={first.options}
             series={first.series}
             type="line"
-            width="500"
+            max-width="500"
           />
         </div>
       </div>
