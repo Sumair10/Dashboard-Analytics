@@ -23,7 +23,7 @@ import EmailIcon from "@mui/icons-material/Email";
 // import NotificationsIcon from '@mui/icons-material/Notifications';
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import Chart from "./Chart";
+import Chart from "./Hello";
 import Deposits from "./Deposits";
 import Orders from "./Orders";
 import "./dashboard.css";
@@ -42,7 +42,16 @@ import AddIcon from "@mui/icons-material/Add";
 import Title from "./Title";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import InboxOutlinedIcon from "@mui/icons-material/InboxOutlined";
-import InsertChartOutlinedSharpIcon from '@mui/icons-material/InsertChartOutlinedSharp';
+import InsertChartOutlinedSharpIcon from "@mui/icons-material/InsertChartOutlinedSharp";
+import BarChart, { Bar } from "./Barchart";
+import { VerticalBar } from "./VerticalBar";
+import Doughnut from "./Doughnut";
+import Curve from "./Curve";
+import Charts from "./Hello";
+import Hello from "./Hello";
+import Line from "./Line";
+import Area from "./Area";
+import AreaRadial from "./AreaRadial";
 
 function Copyright(props) {
   return (
@@ -166,7 +175,7 @@ function DashboardContent() {
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                sx={{ display: { xs : 'none' ,sm : 'block' , md : 'block' } }}
+                sx={{ display: { xs: "none", sm: "block", md: "block" } }}
               >
                 <Box sx={{ display: "flex", alignItems: "flex-end" }}>
                   <SearchIcon sx={{ color: "#acacac", mr: 1, my: 0.5 }} />
@@ -210,7 +219,7 @@ function DashboardContent() {
                 <Grid
                   md={3}
                   sm={4}
-                  xs ={5}
+                  xs={5}
                   container
                   direction="row"
                   justifyContent="flex-end"
@@ -276,7 +285,10 @@ function DashboardContent() {
                   alignItems="flex-end"
                 >
                   <Grid>
-                    <InsertChartOutlinedSharpIcon fontSize="large" sx={{ color: "#2c3d4f" , mr: 1 }} />
+                    <InsertChartOutlinedSharpIcon
+                      fontSize="large"
+                      sx={{ color: "#2c3d4f", mr: 1 }}
+                    />
                   </Grid>
                   <Grid>
                     {" "}
@@ -359,6 +371,9 @@ function DashboardContent() {
                     <h2>$433,534,300</h2>
                     <p>Sold 12,332 Items</p>
                   </Grid>
+                  <Grid>
+                    <Bar />
+                  </Grid>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={4} lg={4}>
@@ -402,6 +417,9 @@ function DashboardContent() {
                         sx={{ color: "#a5a5a5" }}
                       />
                     </Grid>
+                  </Grid>
+                  <Grid>
+                    <AreaRadial />
                   </Grid>
                 </Paper>
               </Grid>
@@ -506,7 +524,7 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
-                    height: 320,
+                    height: 500,
                     // border : '2px solid red',
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
                   }}
@@ -550,6 +568,9 @@ function DashboardContent() {
                   >
                     <h2>$433,534,300</h2>
                   </Grid>
+                  <Grid>
+                    <Line />
+                  </Grid>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={6} lg={6}>
@@ -558,7 +579,7 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
-                    height: 320,
+                    height: 500,
                     // border : '2px solid red',
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
                   }}
@@ -594,6 +615,9 @@ function DashboardContent() {
                       />
                     </Grid>
                   </Grid>
+                  <Grid>
+                    <Area />
+                  </Grid>
                 </Paper>
               </Grid>
 
@@ -603,7 +627,7 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
-                    height: 320,
+                    height: 500,
                     // border : '2px solid red',
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
                   }}
@@ -640,6 +664,9 @@ function DashboardContent() {
                       />
                     </Grid>
                   </Grid>
+                  <Grid>
+                    <Hello />
+                  </Grid>
                 </Paper>
               </Grid>
               <Grid item xs={12} md={6} lg={6}>
@@ -648,7 +675,7 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
-                    height: 320,
+                    height: 500,
                     // border : '2px solid red',
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
                   }}
@@ -683,6 +710,14 @@ function DashboardContent() {
                         sx={{ color: "#a5a5a5" }}
                       />
                     </Grid>
+                  </Grid>
+                  <Grid>
+                    <Doughnut />
+                    {/* <Charts /> */}
+                    {/* <Doughnut/> */}
+                    {/* <Doughnut1/> */}
+                    {/* <ApexCharts/> */}
+                    {/* <Curve/> */}
                   </Grid>
                 </Paper>
               </Grid>
