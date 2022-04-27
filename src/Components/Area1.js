@@ -1,45 +1,40 @@
 import React, { useState } from "react";
 import Chart from "react-apexcharts";
 
-export default function Area() {
+export default function Area1() {
   const [first, setFirst] = useState({
     series: [
       {
-        // name: "series1",
-        data: [0, 40, 28, 51],
-      },
-      {
-        // name: "series2",
-        data: [10, 32, 45, 32],
-      },
-      {
-        // name: "series2",
-        data: [15, 52, 41, 11],
+        name: "series1",
+        data: [80, 110, 70, 100, 40, 120],
       },
     ],
     options: {
       chart: {
         height: 350,
         type: "area",
+        toolbar: {
+          show: false,
+        },
       },
+     
       dataLabels: {
         enabled: false,
+      },
+      yaxis: {
+        show: false,
       },
       stroke: {
         show: true,
         curve: "straight",
+        // lineCap: 'butt',
+        colors: ["#659fd8"],
         width: 2,
         dashArray: 0,
       },
-
-      xaxis: {
-        show: false,
-      },
-      tooltip: {
-        x: {
-          format: "dd/MM/yy HH:mm",
-        },
-      },
+      xaxis :{
+        categories: [ 'AUG' , 'SEP','OCT','NOV','DEC', 'JAN'],
+      }
     },
   });
 
@@ -51,7 +46,7 @@ export default function Area() {
             options={first.options}
             series={first.series}
             type="area"
-            max-width="500"
+            width={250}
           />
         </div>
       </div>

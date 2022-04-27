@@ -3,20 +3,59 @@ import Chart from "react-apexcharts";
 
 export default function Hello() {
   const [first, setFirst] = useState({
-    options: {
-      chart: {
-        id: "basic-bar",
-      },
-      xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
-      },
-    },
     series: [
       {
-        name: "series-1",
-        data: [30, 40, 45, 50, 49, 60, 70, 91],
+        name: " ",
+        data: [44, 55, 41, 67, 22, 43 , 44,44, 55],
+      },
+      {
+        name: " ",
+        data: [13, 23, 20, 8, 13, 27,23, 8, 13],
       },
     ],
+    options: {
+      yaxis: {
+        show: false,
+      },
+      xaxis: {
+        show: false,
+      },
+      colors:['#accbea' ,'#9bb6d3'],
+      chart: {
+        type: "bar",
+        height: 350,
+        stacked: true,
+        toolbar: {
+          show: false,
+        },
+        zoom: {
+          enabled: true,
+        },
+      },
+     
+     
+     
+      xaxis: {
+        type: "datetime",
+        categories: [
+          "01/01/2011 GMT",
+          "01/02/2011 GMT",
+          "01/03/2011 GMT",
+          "01/04/2011 GMT",
+          "01/05/2011 GMT",
+          "01/06/2011 GMT",
+          "01/07/2011 GMT",
+          "01/08/2011 GMT",
+        ],
+      },
+      // legend: {
+      //   position: "right",
+      //   offsetY: 40,
+      // },
+      fill: {
+        opacity: 1,
+      },
+    },
   });
 
   return (
@@ -27,10 +66,10 @@ export default function Hello() {
             options={first.options}
             series={first.series}
             type="bar"
-            max-width="500"
+            // height={350}
           />
         </div>
       </div>
     </div>
   );
-};
+}

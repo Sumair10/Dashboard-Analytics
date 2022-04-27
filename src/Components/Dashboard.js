@@ -52,6 +52,7 @@ import Hello from "./Hello";
 import Line from "./Line";
 import Area from "./Area";
 import AreaRadial from "./AreaRadial";
+import Area1 from "./Area1";
 
 function Copyright(props) {
   return (
@@ -330,7 +331,7 @@ function DashboardContent() {
                     p: 2,
                     display: "flex",
                     flexDirection: "column",
-                    minHeight: 320,
+                    height: 320,
                     // border : '2px solid red',
                     boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
                   }}
@@ -371,8 +372,12 @@ function DashboardContent() {
                     <h2>$433,534,300</h2>
                     <p>Sold 12,332 Items</p>
                   </Grid>
-                  <Grid>
-                    <Bar />
+                  <Grid   container
+                      direction="row"
+                      justifyContent="center"
+                      alignItems="center">
+                    {/* <Bar /> */}
+                    <Area1/>
                   </Grid>
                 </Paper>
               </Grid>
@@ -418,7 +423,10 @@ function DashboardContent() {
                       />
                     </Grid>
                   </Grid>
-                  <Grid>
+                  <Grid  container
+                      direction="row"
+                      justifyContent="center"
+                      alignItems="center">
                     <AreaRadial />
                   </Grid>
                 </Paper>

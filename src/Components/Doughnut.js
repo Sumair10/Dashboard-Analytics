@@ -3,9 +3,14 @@ import Chart from "react-apexcharts";
 
 export default function Doughnut() {
   const [first, setFirst] = useState({
-    options: {},
-    series: [44, 55, 41, 17, 15],
+    options: {
+      colors: ['#f8e268', '#e08197', '#8abd6e', '#92ccce', '#7ababc']
+      
+
+    },
+    series: [10, 24, 35, 17, 14],
     labels: ["A", "B", "C", "D", "E"],
+    
   });
 
   return (

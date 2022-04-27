@@ -8,15 +8,27 @@ export default function Line() {
         id: "basic-bar",
       },
       xaxis: {
-        categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999],
+        show: false,
       },
+      yaxis: {
+        show: false,
+      },
+      stroke : {
+        curve : 'smooth'
+      },
+      colors: ['#477cb2', '#aeccea']
     },
     series: [
       {
-        name: "series-1",
-        data: [30, 40, 45, 50, 49, 60, 70, 91],
+        name: "DAY TIME",
+        data: [20, 55],
+      },
+      {
+        name: "NIGHT TIME",
+        data: [25, 50],
       },
     ],
+    
   });
 
   return (
